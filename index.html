@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FrameFinder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>FrameFinder</h1>
+    <p>Find images that inspire you.</p>
+  </header>
+
+  <main>
+    <form id="search-form">
+      <label for="search-input" class="sr-only">Search images</label>
+      <input type="search" id="search-input" placeholder="Search images...">
+      <button type="submit" id="search-button">Search</button>
+    </form>
+
+    <div class="categories">
+      <button type="submit">Nature</button>
+      <button type="submit">Animals</button>
+      <button type="submit">Travel</button>
+    </div>
+
+    <p id="status">0 images found</p>
+
+    <section id="results" aria-label="Image search results">
+      <p class="empty-message">Search for something to get started.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

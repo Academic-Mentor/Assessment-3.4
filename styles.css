@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f5f7fa;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #285a8e;
+}
+
+#search-form {
+  display: flex;
+  gap: 10px;
+}
+
+#search-input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#search-button {
+  padding: 12px 20px;
+  background: #285a8e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.categories button {
+  padding: 7px 14px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#status {
+  margin-top: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  min-height: 180px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.empty-message {
+  grid-column: 1 / -1;
+  align-self: center;
+  text-align: center;
+  color: #777;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-top: 15px;
+    padding: 12px;
+  }
+
+  #search-button {
+    padding: 12px;
+  }
+}
+
+.image-card {
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.image-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-card p {
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
