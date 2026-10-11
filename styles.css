@@ -95,3 +95,23 @@ header h1 {
   }
 }
 
+.image-card {
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.image-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-card p {
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
